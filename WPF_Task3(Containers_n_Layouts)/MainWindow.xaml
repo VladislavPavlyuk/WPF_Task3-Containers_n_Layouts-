@@ -1,0 +1,39 @@
+﻿<Window x:Class="WPF_Task3_Containers_n_Layouts_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Task3_Containers_n_Layouts_"
+        mc:Ignorable="d"
+        Title="Определитель Матрицы" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        
+        <TextBox Name="a11" FontSize="40" Margin="3" Grid.Column="0" Grid.Row="0"></TextBox>
+        <TextBox Name="a21" FontSize="40" Margin="3" Grid.Column="0" Grid.Row="1"></TextBox>
+        <TextBox Name="a31" FontSize="40" Margin="3" Grid.Column="0" Grid.Row="2"></TextBox>
+
+        <TextBox Name="a12" FontSize="40" Margin="3" Grid.Column="1" Grid.Row="0"></TextBox>
+        <TextBox Name="a22" FontSize="40" Margin="3" Grid.Column="1" Grid.Row="1"></TextBox>
+        <TextBox Name="a32" FontSize="40" Margin="3" Grid.Column="1" Grid.Row="2"></TextBox>
+
+        <TextBox Name="a13" FontSize="40" Margin="3" Grid.Column="2" Grid.Row="0"></TextBox>
+        <TextBox Name="a23" FontSize="40" Margin="3" Grid.Column="2" Grid.Row="1"></TextBox>
+        <TextBox Name="a33" FontSize="40" Margin="3" Grid.Column="2" Grid.Row="2"></TextBox>
+
+        <TextBlock Name="Result" VerticalAlignment="Center" FontSize="40" Grid.Column="3" Grid.Row="0" Grid.RowSpan="3">
+            <Button Name="Count" Click="Count_Click">=</Button>
+        </TextBlock>           
+
+    </Grid>
+</Window>
